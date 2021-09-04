@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEFA</title>
+
+
+
+    <style type="text/css">
+        body {
+            background-image: url("landing.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: "lucida sans";
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .myDiv {
+            width: 615px;
+            height: 615px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+
+        }
+    </style>
+
+    <p><br><br></p>
+
+    <p></p>
+    <div>
+        <h1 style="text-align: center">
+            Quiero que nunca olvides algo
+        </h1>
+    </div>
+
+    <p style="text-align: center">
+        <italic>y que quisiera recordarte siempre que la vida permita</italic>
+        <br><br>
+    </p>
+    <p style="text-align: center">
+        <input type="button" value=" ♥♥♥ " id="bot" />
+    </p>
+
+    <div class="myDiv" id="ima">
+
+
+    </div>
+
+</head>
+
+<body>
+    <script>
+        bot.addEventListener('click', mensaje);
+        var conta = 0;
+
+
+
+
+
+
+        function mensaje() {
+
+
+            switch (conta) {
+                case 0:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_7.png";
+                    var src = document.getElementById("ima");
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 1:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_6.png";
+                    var src = document.getElementById("ima");
+                    src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+
+                case 2:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_5.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 3:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_4.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 4:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_3.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 5:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_2.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 6:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn_1.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 7:
+                    var img = document.createElement("img");
+                    img.src = "Unicorn.png";
+                    var src = document.getElementById("ima");
+                    //src.removeChild(src.firstChild);
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    console.log(conta);
+                    conta++;
+                    break;
+                case 8:
+                    conta++;
+                    var img = document.createElement("img");
+                    img.src = "text.png";
+                    var src = document.getElementById("ima");
+                    src.removeChild(src.childNodes[0]);
+                    src.appendChild(img);
+                    break;
+                default:
+                    alert("recarga la página, aún no aprendo varias cosas");
+                    break;
+            }
+
+
+
+
+
+
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
